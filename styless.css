@@ -1,0 +1,165 @@
+:root {
+  --product-container-white: #fff;
+  --border-card: #bababa;
+  --badge-color: #fc03be;
+  --badge-text: #fff;
+  --badge-company: #bababa;
+  --buton1-bc: #fc03be;
+  --button2-bc: #525252;
+}
+
+body {
+  background-color: var(--product-container-white);
+  font-family: Barlow, Ubuntu, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.product-card {
+  width: 450px;
+  background-color: var(--product-container-white);
+  border: 1px solid var(--border-card);
+  position: relative;
+}
+
+/*------------------------ Badges --------------------------------------------*/
+.bestseller-badge {
+  background-color: var(--badge-color);
+  color: var(--badge-text);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 4px;
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+
+.company-badge {
+  background-color: var(--product-container-white);
+  color: var(--badge-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 4px;
+  border: 2px solid var(--badge-color);
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+
+.discount-badge {
+  background-color: var(--badge-color);
+  color: var(--badge-text);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.product-title {
+  font-size: 1.3vw;
+  line-height: 1.5;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.product-description {
+  margin-top: 0;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 8px;
+}
+
+/* Product Order*/
+.product-order-container {
+  background-color: var(--button2-bc);
+  position: relative;
+  height: 120px;
+  padding: 24px;
+  margin: 12px;
+  border-radius: 16px;
+}
+
+.product-price {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--badge-text);
+}
+
+.discount-text {
+  font-size: 16px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: var(--badge-text);
+}
+
+/*------------------------ Button --------------------------------------------*/
+
+/* add-to-cart*/
+.add-to-cart-container {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.add-to-cart-button {
+  background-color: var(--buton1-bc);
+  color: var(--badge-text);
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.add-to-cart-container :hover {
+  color: var(--buton1-bc);
+  background-color: var(--product-container-white);
+}
+
+/* add-to-wishlist*/
+.add-to-wishlist-container {
+  position: absolute;
+  right: 30px;
+  top: 75px;
+}
+
+.add-to-wishlist-button {
+  background-color: var(--border-card);
+  color: var(--badge-text);
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.add-to-wishlist-container :hover {
+  color: var(--buton1-bc);
+  background-color: var(--product-container-white);
+}
+
+/*------------------------ Image --------------------------------------------*/
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
